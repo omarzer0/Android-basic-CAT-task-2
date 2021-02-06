@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // this  method is for searching google
+    // this is the second comment
     public void searchTheWeb(View view) {
         String text = numberET.getText().toString();
         if (isNumber(text)) {
