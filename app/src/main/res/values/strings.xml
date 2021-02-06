@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CAT basic task2</string>
+    <string name="write_your_number">Write your number</string>
+    <string name="here_is_what_you_wrote">here is what you wrote</string>
+    <string name="search_the_web">search the web</string>
+    <string name="show_the_text">show the text</string>
+</resources>

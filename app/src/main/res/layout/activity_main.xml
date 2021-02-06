@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/numberET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/write_your_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/displayTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="@string/here_is_what_you_wrote"
+        app:layout_constraintEnd_toEndOf="@+id/numberET"
+        app:layout_constraintStart_toStartOf="@+id/numberET"
+        app:layout_constraintTop_toBottomOf="@+id/numberET" />
+
+    <Button
+        android:id="@+id/showTheTextBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="showTheText"
+        android:text="@string/show_the_text"
+        app:layout_constraintStart_toStartOf="@+id/displayTV"
+        app:layout_constraintTop_toBottomOf="@+id/displayTV" />
+
+    <Button
+        android:id="@+id/searchTheWebBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="searchTheWeb"
+        android:text="@string/search_the_web"
+        app:layout_constraintEnd_toEndOf="@+id/displayTV"
+        app:layout_constraintTop_toBottomOf="@+id/displayTV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
