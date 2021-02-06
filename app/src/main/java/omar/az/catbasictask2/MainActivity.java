@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         else numberET.setError("Please write a number");
     }
 
+    // this  method is for searching google
     public void searchTheWeb(View view) {
         String text = numberET.getText().toString();
         if (isNumber(text)) {
